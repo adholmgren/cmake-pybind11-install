@@ -1,4 +1,4 @@
-import scikit_build_example as m
+import scikit_build_example_foo as m
 
 
 def test_version():
