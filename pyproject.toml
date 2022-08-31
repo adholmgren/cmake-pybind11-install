@@ -1,16 +1,13 @@
 [build-system]
 requires = [
     "setuptools>=42",
-    "pybind11~=2.9.2",
-    "cmake>=3.22",
-    "scikit-build>=0.15.0",
+    "wheel",
+    "setuptools_scm[toml]>=3.4",
+    "pybind11>=2.6.0",
+    "ninja; sys_platform != 'Windows'",
+    "cmake>=3.12",
 ]
+
 build-backend = "setuptools.build_meta"
 
-[tool.isort]
-profile = "black"
-
-[tool.cibuildwheel]
-test-command = "pytest {project}/tests"
-test-extras = ["test"]
-test-skip = ["*universal2:arm64"]
+[tool.setuptools_scm]
