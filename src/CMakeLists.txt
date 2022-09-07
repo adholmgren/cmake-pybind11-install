@@ -7,4 +7,4 @@ target_link_libraries(add_interface PRIVATE add)
 pybind11_add_module(_subtract MODULE subtract/subtract.cpp)
 pybind11_add_module(_multiply MODULE multiply/multiply.cpp)
 
-install(TARGETS add_interface _subtract _multiply DESTINATION .)
+install(TARGETS add_interface _subtract _multiply DESTINATION libs)

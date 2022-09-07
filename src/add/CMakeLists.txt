@@ -8,5 +8,5 @@ add_library( ${PROJECT_NAME} SHARED ${INC} ${SRC})
 target_include_directories( ${PROJECT_NAME} PRIVATE ${INC_PATH} )
 target_include_directories( ${PROJECT_NAME} PUBLIC include )
 
-install( TARGETS ${PROJECT_NAME} DESTINATION . )
+install( TARGETS ${PROJECT_NAME} DESTINATION libs )
 install( FILES ${INC} DESTINATION include/${PROJECT_NAME} )
